@@ -1,0 +1,70 @@
+$ java App teste/labirinto1_10v2.txt 
+Arquivo de Entrada : teste/labirinto1_10v2.txt
+E 0 1 1 0 0 0 0 0 1 
+1 0 0 0 0 1 0 1 0 0 
+0 0 0 0 1 1 0 0 1 1 
+0 1 1 0 0 1 1 0 0 1 
+0 0 0 0 0 1 1 0 1 1 
+1 1 1 1 0 1 1 0 1 1 
+1 0 1 1 0 1 1 0 0 0 
+S 0 0 0 0 1 1 1 1 1 
+1 0 1 0 0 0 0 0 1 1 
+1 0 1 0 1 0 0 0 0 0 
+
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+▒▒EE  ████          ██▒▒
+▒▒██        ██  ██    ▒▒
+▒▒        ████    ████▒▒
+▒▒  ████    ████    ██▒▒
+▒▒          ████  ████▒▒
+▒▒████████  ████  ████▒▒
+▒▒██  ████  ████      ▒▒
+▒▒SS        ██████████▒▒
+▒▒██  ██          ████▒▒
+▒▒██  ██  ██          ▒▒
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+O melhor encontrado foi o cromossomo 18 (gerado de 0 a 20)
+Aptidão   : 5.656854249492381 (distancia euclidiana: posicao x saida)
+Caminho   : [(0,0), (1,1), (1,2), (2,3), (3,4)] (percorrido até bater na parede)
+Cromossomo: SE E SE SE SE S N SW E N SW S E S E SW N NW NE W N S E N W E E NW NE SW S N NW N NW E NE E NW NW NE NE W NE SW W SE E NE N 
+LISTA DE TODOS CROMOSSOMOS (POPULACAO INICIAL) : 
+[0] Aptidão: 7.0, caminho: [(0,0)]
+[0] Cromossomo: W SW SW SE W SE NE NE NW NE SE E N NE SW NE NE NW W SE SW SE W NE NE SW SW SE SW S NW N S S W W S SW E SW NE SW SE E N SE N SW E W 
+[1] Aptidão: 7.0, caminho: [(0,0)]
+[1] Cromossomo: NW S W S NE W SW SE NW S N SE SE W NW SW S E S NW W N E NW W SE NE W SW E E W SW SE W SE W SW S W SW SE NW W W NW E S SE SW 
+[2] Aptidão: 7.0, caminho: [(0,0)]
+[2] Cromossomo: NE SE NE NE SW S SE W NW SW NE N N S SE SE E NE NE SE E N NE NW SW W SW NE SE E E NE SE W E NE SW NE SW SE SE NW SW E N W SW SE SE N 
+[3] Aptidão: 7.0, caminho: [(0,0)]
+[3] Cromossomo: NW E SE NE SW SE W SW NE N E NW NE SE SW SW SE SW NW NW NW N E S SE SW NW S SW N SE S NW NE E NE W E S W SW SW N NE SW N NW N W W 
+[4] Aptidão: 7.0, caminho: [(0,0), (0,1), (0,0)]
+[4] Cromossomo: E W N W SE NE SE S NW E N NW NE NE NE SE E N SE N E NW NE N SW NW E S SW SW SW SW SE NE E SE NE NW SE E W W S W NE W NW NW S S 
+[5] Aptidão: 6.082762530298219, caminho: [(0,0), (1,1), (2,0), (1,1)]
+[5] Cromossomo: SE SW NE W N N W S NE SE W S S N N W S S SW NW E NE E E W SE SW N SW E W NW E SW SE NE N S E SW S N E NW NE N NE SW NW E 
+[6] Aptidão: 7.0710678118654755, caminho: [(0,0), (0,1)]
+[6] Cromossomo: E E SE SW SE S N NW NW E S S E SW N W SW E NE SE N NW S NW E S SE S N NE S SW SE S W N W SE N S NW S E E NE W SE S SE NE 
+[7] Aptidão: 7.0, caminho: [(0,0)]
+[7] Cromossomo: W NW SW NE NW SE NW S W E NW NW N N S E SE N SE SE S N S SE NW S SW N N S W SE E NE N SW SE NE W W W NW E SW NW NW NW N W W 
+[8] Aptidão: 7.0, caminho: [(0,0)]
+[8] Cromossomo: NE E E E W NE SE N E SE NW W S NW SE N SE SW W SE E NE N NW SW NW S SE SE SW N NE W SW SW SE S N S E N NE S S SW SW S SW SE S 
+[9] Aptidão: 7.0710678118654755, caminho: [(0,0), (1,1), (0,0), (0,1)]
+[9] Cromossomo: SE NW E NW SW NW N NE NE NE SW SE NW E E W NE N NE W SE NW SW E S NE SE S S S W S NE SW NW W NE N W SE NE S E E NE N NE E N NE 
+[10] Aptidão: 7.0, caminho: [(0,0)]
+[10] Cromossomo: NW S SE N SW NE NE NW W W N S S SW W SW W SW SE W SW E NE NE NW S SE NE NW N NW NW E SE E E SW E NW NW SE S N SE NW NE SW NW SW SW 
+[11] Aptidão: 7.0, caminho: [(0,0)]
+[11] Cromossomo: N NW S S N E SE N N E NE E S S N SE E SE SE S E S N SW NE W E N SW SW E N N SW NE S NW W S N E W SW W SW NE W SW SW NW 
+[12] Aptidão: 7.0, caminho: [(0,0)]
+[12] Cromossomo: NE SE W S NE E NE S S SW E N E NW S N SE NE NE NE S SW SE W SW E NE N E SE N SW SE W N SE SW W NW E E NE N NW W SW NE NW SE N 
+[13] Aptidão: 7.0, caminho: [(0,0)]
+[13] Cromossomo: SW SE NE N SE S W SW W NW SW N S N SE N SE SE SE S SE W N SE NW W S N NW N SW NE W NE S N S NE NW SW SW S SW E W NE E NE NW NW 
+[14] Aptidão: 7.0, caminho: [(0,0)]
+[14] Cromossomo: NW NW SE SE E N SW N N NW E NW SE NE SW NW W NE NW W NE NW W NE S W S W SW E SE E NW NE NE N E N S SE N SW N W NE SE SW W SE NW 
+[15] Aptidão: 7.0710678118654755, caminho: [(0,0), (0,1)]
+[15] Cromossomo: E NE W S E NW N SE SE SW S N E N NW SE SW E S NW NE NE SW S SE S NW NW N E W NW S E SW E NE NW N W SE SW SE NE NE SW S S SE W 
+[16] Aptidão: 7.0, caminho: [(0,0)]
+[16] Cromossomo: S NE N N NE E S NE SE N S N SW SW E SW NE E W W E NE NE NE N W NW NE NW SE NW N N SE W N NW N NE E E E NW E SE SE N N N S 
+[17] Aptidão: 7.0, caminho: [(0,0)]
+[17] Cromossomo: W NW SE SW NW E SW SE S S E NE S N S E SE SE E S E S W NE E E E NW NE E NW N SE E E E E SE S E E SW E E SE S W N E E 
+[18] Aptidão: 5.656854249492381, caminho: [(0,0), (1,1), (1,2), (2,3), (3,4)]
+[18] Cromossomo: SE E SE SE SE S N SW E N SW S E S E SW N NW NE W N S E N W E E NW NE SW S N NW N NW E NE E NW NW NE NE W NE SW W SE E NE N 
+[19] Aptidão: 7.0, caminho: [(0,0), (0,1), (0,0)]
+[19] Cromossomo: E W W N SE E S N NW W SE E SW SE E NE SW SE E NW S NW NE E W SE E W N SW E S N SE NW S NE E E E N NW W N E SE NE E E S 
