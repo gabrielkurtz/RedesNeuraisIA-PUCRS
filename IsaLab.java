@@ -565,14 +565,13 @@ public class IsaLab {
             if(posAgent.x < tam-1 && maze[posAgent.x+2][posAgent.y] == 'M') moedas[1]++;
         }
         if(posAgent.y < tam && maze[posAgent.x][posAgent.y+1] != '1') {
-            if(maze[posAgent.x][posAgent.y+1] == 'M') moedas[0]++;
-            if(posAgent.y < tam-1 && maze[posAgent.x][posAgent.y+2] == 'M') moedas[0]++;
+            if(maze[posAgent.x][posAgent.y+1] == 'M') moedas[2]++;
+            if(posAgent.y < tam-1 && maze[posAgent.x][posAgent.y+2] == 'M') moedas[2]++;
         }
         if(posAgent.x > 0 && maze[posAgent.x-1][posAgent.y] != '1') {
-            if(maze[posAgent.x-1][posAgent.y] == 'M') moedas[0]++;
-            if(posAgent.x > 1 && maze[posAgent.x-2][posAgent.y] == 'M') moedas[0]++;
+            if(maze[posAgent.x-1][posAgent.y] == 'M') moedas[3]++;
+            if(posAgent.x > 1 && maze[posAgent.x-2][posAgent.y] == 'M') moedas[3]++;
         }
-        
     }
 
     public static void main(String[] args) {
