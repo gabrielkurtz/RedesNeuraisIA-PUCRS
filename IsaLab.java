@@ -14,7 +14,7 @@ public class IsaLab {
     private String[][] maze;
     private int lines;
     private int blank;
-    private int tam;
+    private int tam = 32;
     private double[][] pop;
     private int tamPop = 101;
     private int gen = 0;
@@ -45,7 +45,7 @@ public class IsaLab {
                 }
                 col++;
             }
-            tam = blank / 2;
+            // tam = blank / 2;
             // tam = 10;
         } catch (IOException ex) {
             System.out.println("Não foi possível ler o arquivo");
@@ -232,10 +232,11 @@ public class IsaLab {
     }
 
     public void firstGen() {
+        Random r = new Random();
         pop = new double[tamPop][tam + 1];
         for (int i = 0; i < tamPop; i++) {
             for (int j = 0; j < tam - 1; j++) {
-                pop[i][j] = randomMove();
+                pop[i][j] = (r.nextInt(999)+1)/1000;
             }
             pop[i][tam] = 0;
         }
@@ -253,11 +254,6 @@ public class IsaLab {
             }
         }
         return s;
-    }
-
-    public int randomMove() {
-        Random r = new Random();
-        return (r.nextInt(4) + 1);
     }
 
     public void printPop() {
@@ -572,6 +568,17 @@ public class IsaLab {
             if(maze[posAgent.x-1][posAgent.y] == 'M') moedas[3]++;
             if(posAgent.x > 1 && maze[posAgent.x-2][posAgent.y] == 'M') moedas[3]++;
         }
+        //indice 0-cima 1-direita, 2-baixo, 3-esquerda
+        return moedas;
+    }
+
+    // recebe entrada array de 4pos contendo o num de moedas por direcao
+    // tambem o w = pesos dos 
+    public int nextStep(int[] coins, double[] w) {
+        //IMPLEMENTAR REDE, PROPAGA PELA REDE MLP
+        
+
+        return null; //ajustar, retorna baseado na saida da rede
     }
 
     public static void main(String[] args) {
